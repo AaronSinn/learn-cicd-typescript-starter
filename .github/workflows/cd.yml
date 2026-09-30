@@ -9,9 +9,9 @@ jobs:
     
     steps:
       - id: 'auth'
-      uses: 'google-github-actions/auth@v2'
-      with:
-        credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
         
       - name: Check out code
         uses: actions/checkout@v6
